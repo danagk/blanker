@@ -1,12 +1,3 @@
 # blanker
 
-(it's funny because this readme is blank) 
-
-(ha ha)
-
-
-
-
-
-
-(but I'll fill this in later)
+download and run the .jar file to deploy this app
