@@ -43,10 +43,10 @@ public class BlankerMain {
             System.out.println("Please enter a valid file name.");
             origFile = console.nextLine();
          }
-         Scanner input = new Scanner(new File(origFile));
+         Scanner input = new Scanner(new File("text-files/" + origFile));
          
          // save blanked version of file
-         String blankedFile = "blanked-" + origFile;
+         String blankedFile = "blanked-files/blanked-" + origFile;
          PrintStream output = new PrintStream(new File(blankedFile));
          blanker.blank(input, output);
          System.out.println("File has been successfully blanked. Saved as \"" + blankedFile + "\".");
@@ -56,7 +56,7 @@ public class BlankerMain {
          boolean interact = blanker.yesTo("Would you like to fill in the blanks interactively");
          System.out.println();
          if (interact) {
-            blanker.fillIn(new Scanner(new File(origFile)), new Scanner(new File(blankedFile)));
+            blanker.fillIn(new Scanner(new File("text-files/" + origFile)), new Scanner(new File(blankedFile)));
          }
          
          // prompt to play again
