@@ -1,0 +1,20 @@
+
+This application takes in an input text file (file MUST end in .txt) and inputs blanks
+in place of words in randomly-generated places. The resulting file is outputted as
+"blanked-[original file name]" and saved to the working directory. 
+
+The user can then choose to fill in the blanks interactively. If desired, the program will
+print the words from the blanked file to the console until it encounters a blank, at which point
+the output pauses and the user must type their guess for what word was originally in place of
+the blank. Only one try will be given, and the correct answer will not be revealed.
+
+After the user has worked through the entire file, they can see how words they got correct and
+view their errors, if desired.
+
+Some tips:
+
+* Blanks are sized relative to the words they replace.
+* Guesses are case- and punctuation-insenstive.
+* This program works best when the text file has lines of 5-15 words. It performs poorly
+   if the text file has a few, very long lines, or many, very short lines.
+  
